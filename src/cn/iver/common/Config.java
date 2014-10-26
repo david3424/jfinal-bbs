@@ -93,11 +93,12 @@ public class Config extends JFinalConfig {
     public void afterJFinalStart() { }
 
     private boolean isDevMode(){
-        String osName = System.getProperty("os.name");
-        return osName.indexOf("Windows") != -1;
+//        String osName = System.getProperty("os.name");
+//        return osName.indexOf("Windows") != -1;
+        return true;
     }
 
     public static void main(String[] args) throws Exception {
-        JFinal.start("WebRoot", 80, "/bbs", 5);
+        JFinal.start("WebRoot", 8080, "/bbs", 5);
     }
 }
